@@ -12,10 +12,6 @@ export const docsConfig: DocsConfig = {
       href: "/docs",
     },
     {
-      title: "Components",
-      href: "/docs/components/accordion",
-    },
-    {
       title: "Themes",
       href: "/themes",
     },
