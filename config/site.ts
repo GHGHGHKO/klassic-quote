@@ -7,6 +7,7 @@ export const siteConfig = {
   links: {
     twitter: "https://twitter.com/shadcn",
     github: "https://github.com/shadcn-ui/ui",
+    randomQuote: "https://klassic-quote-api.mooo.com/v1/random-quote",
   },
 }
 

@@ -13,16 +13,16 @@ import {
 } from "@/components/page-header"
 import { buttonVariants } from "@/registry/new-york/ui/button"
 import FormsPage from "@/app/examples/forms/page";
+import RandomQuote from "@/components/random-quote";
 
 export default function IndexPage() {
   return (
     <div className="container relative">
       <PageHeader>
         <Announcement />
-        <PageHeaderHeading>Build your component library</PageHeaderHeading>
+        <PageHeaderHeading>한국 클래식 영화 명대사 API</PageHeaderHeading>
         <PageHeaderDescription>
-          Beautifully designed components that you can copy and paste into your
-          apps. Accessible. Customizable. Open Source.
+            <RandomQuote/>
         </PageHeaderDescription>
         <PageActions>
           <Link href="/docs" className={cn(buttonVariants())}>
