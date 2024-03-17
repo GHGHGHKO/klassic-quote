@@ -42,15 +42,6 @@ export default function ExamplesLayout({ children }: ExamplesLayoutProps) {
             >
               Get Started
             </Link>
-            <Link
-              href="/components"
-              className={cn(
-                buttonVariants({ variant: "outline" }),
-                "rounded-[6px]"
-              )}
-            >
-              Components
-            </Link>
           </PageActions>
         </PageHeader>
         <section>

@@ -12,7 +12,7 @@ import {
   PageHeaderHeading,
 } from "@/components/page-header"
 import { buttonVariants } from "@/registry/new-york/ui/button"
-import FormsPage from "@/app/examples/forms/default-page";
+import FormsPage from "@/app/examples/forms/page";
 
 export default function IndexPage() {
   return (
