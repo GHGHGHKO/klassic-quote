@@ -42,7 +42,7 @@ const GetRandomQuote = () => {
             {loading ? <p>Loading...</p> : (
                 <div>
                     <p><i>{`"${quote.quote}"`}</i></p>
-                    <p>{"타짜, " + (quote.author)}</p>
+                    <p style={{ textAlign: 'right' }}>{"- 타짜, " + (quote.author)}</p>
                 </div>
             )}
         </div>

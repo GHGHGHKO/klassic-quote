@@ -1,5 +1,5 @@
 export const siteConfig = {
-  name: "shadcn/ui",
+  name: "GHGHGHKO/klassic-quote-api",
   url: "https://ui.shadcn.com",
   ogImage: "https://ui.shadcn.com/og.jpg",
   description:

@@ -11,6 +11,7 @@ import {
   PageHeaderHeading,
 } from "@/components/page-header"
 import { buttonVariants } from "@/registry/new-york/ui/button"
+import RandomQuote from "@/components/random-quote";
 
 export const metadata: Metadata = {
   title: "Examples",
@@ -28,12 +29,11 @@ export default function ExamplesLayout({ children }: ExamplesLayoutProps) {
         <PageHeader>
           <Announcement />
           <PageHeaderHeading className="hidden md:block">
-            Check out some examples
+            한국 클래식 영화 명대사 API
           </PageHeaderHeading>
           <PageHeaderHeading className="md:hidden">Examples</PageHeaderHeading>
           <PageHeaderDescription>
-            Dashboard, cards, authentication. Some examples built using the
-            components. Use this as a guide to build your own.
+            <RandomQuote/>
           </PageHeaderDescription>
           <PageActions>
             <Link
