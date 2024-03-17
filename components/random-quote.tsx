@@ -1,6 +1,7 @@
 "use client"
 
 import React, { useState, useEffect } from "react";
+import {siteConfig} from "@/config/site";
 
 interface Quote {
     id: number;
@@ -20,7 +21,7 @@ const GetRandomQuote = () => {
 
     useEffect(() => {
         window
-            .fetch(`https://klassic-quote-api.mooo.com/v1/random-quote`, {
+            .fetch(siteConfig.links.randomQuote, {
             method: 'GET', // GET 메서드 추가
             headers: {
                 'Content-Type': 'application/json' // 필요에 따라 헤더를 추가할 수 있습니다.
@@ -38,11 +39,10 @@ const GetRandomQuote = () => {
 
     return (
         <div>
-            {loading && <p>Loading...</p>}
-            {quote && (
+            {loading ? <p>Loading...</p> : (
                 <div>
-                    <p>{quote.quote}</p>
-                    <p>{"타짜, " + quote.author}</p>
+                    <p><i>{`"${quote.quote}"`}</i></p>
+                    <p>{"타짜, " + (quote.author)}</p>
                 </div>
             )}
         </div>
