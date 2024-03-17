@@ -20,7 +20,7 @@ const nextConfig = {
     return [
       {
         source: "/examples",
-        destination: "/examples/mail",
+        destination: "/examples/forms",
         permanent: false,
       },
       {
