@@ -2,12 +2,7 @@
 
 import React, { useState, useEffect } from "react";
 import {siteConfig} from "@/config/site";
-
-interface Quote {
-    id: number;
-    quote: string;
-    author: string;
-}
+import {Quote} from "@/data/quote";
 
 const initialQuoteState: Quote = {
     id: 0,
