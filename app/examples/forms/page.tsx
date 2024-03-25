@@ -2,7 +2,7 @@ import Image from "next/image"
 
 import {Separator} from "@/registry/new-york/ui/separator";
 import {SidebarNav} from "@/app/examples/forms/components/sidebar-nav";
-import {ProfileForm} from "@/app/examples/forms/profile-form";
+import {AccountForm} from "@/app/examples/forms/account-form";
 
 const sidebarNavItems = [
     {
@@ -51,7 +51,7 @@ export default function FormsPage() {
                             </p>
                         </div>
                         <Separator />
-                        <ProfileForm />
+                        <AccountForm />
                     </div>
                 </div>
             </div>
