@@ -21,7 +21,7 @@ export function SiteHeader() {
           </div>
           <nav className="flex items-center">
             <Link
-              href={siteConfig.links.github}
+              href={siteConfig.links.myGithub}
               target="_blank"
               rel="noreferrer"
             >
@@ -35,23 +35,6 @@ export function SiteHeader() {
               >
                 <Icons.gitHub className="h-4 w-4" />
                 <span className="sr-only">GitHub</span>
-              </div>
-            </Link>
-            <Link
-              href={siteConfig.links.twitter}
-              target="_blank"
-              rel="noreferrer"
-            >
-              <div
-                className={cn(
-                  buttonVariants({
-                    variant: "ghost",
-                  }),
-                  "w-9 px-0"
-                )}
-              >
-                <Icons.twitter className="h-3 w-3 fill-current" />
-                <span className="sr-only">Twitter</span>
               </div>
             </Link>
             <ModeToggle />

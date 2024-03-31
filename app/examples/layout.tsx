@@ -12,6 +12,7 @@ import {
 } from "@/components/page-header"
 import { buttonVariants } from "@/registry/new-york/ui/button"
 import RandomQuote from "@/components/random-quote";
+import {GithubLinks} from "@/app/examples/forms/components/github-links";
 
 export const metadata: Metadata = {
   title: "Examples",
@@ -42,6 +43,7 @@ export default function ExamplesLayout({ children }: ExamplesLayoutProps) {
             >
               Get Started
             </Link>
+            <GithubLinks />
           </PageActions>
         </PageHeader>
         <section>

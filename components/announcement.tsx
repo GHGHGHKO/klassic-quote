@@ -2,11 +2,13 @@ import Link from "next/link"
 import { ArrowRightIcon } from "@radix-ui/react-icons"
 
 import { Separator } from "@/registry/new-york/ui/separator"
+import {siteConfig} from "@/config/site";
 
 export function Announcement() {
   return (
     <Link
-      href="/docs/changelog"
+      href={siteConfig.links.apiGithub}
+      target="_blank"
       className="inline-flex items-center rounded-lg bg-muted px-3 py-1 text-sm font-medium"
     >
       🎉 <Separator className="mx-2 h-4" orientation="vertical" />{" "}

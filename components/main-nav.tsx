@@ -41,7 +41,8 @@ export function MainNav() {
           Examples
         </Link>
         <Link
-          href={siteConfig.links.github}
+          href={siteConfig.links.webGithub}
+          target="_blank"
           className={cn(
             "hidden text-foreground/60 transition-colors hover:text-foreground/80 lg:block"
           )}
