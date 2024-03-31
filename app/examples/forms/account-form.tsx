@@ -20,22 +20,14 @@ import {Quote} from "@/data/quote";
 import {siteConfig} from "@/config/site";
 
 const accountFormSchema = z.object({
-  name: z
-    .string()
-    .min(2, {
-      message: "Name must be at least 2 characters.",
-    })
-    .max(30, {
-      message: "Name must not be longer than 30 characters.",
-    }),
+  URL: z.string()
 })
 
 type AccountFormValues = z.infer<typeof accountFormSchema>
 
 // This can come from your database or API.
 const defaultValues: Partial<AccountFormValues> = {
-  // name: "Your name",
-  // dob: new Date("2023-01-23"),
+  URL: siteConfig.links.randomQuote,
 }
 
 export function AccountForm() {
@@ -48,7 +40,7 @@ export function AccountForm() {
     toast({
       title: "You submitted the following values:",
       description: (
-        <pre className="mt-2 w-[340px] rounded-md bg-slate-950 p-4">
+        <pre className="mt-2 w-[340px] whitespace-pre-wrap rounded-md bg-slate-950 p-4">
           <code className="text-white">{JSON.stringify(data, null, 2)}</code>
         </pre>
       ),
@@ -71,22 +63,22 @@ export function AccountForm() {
       <form onSubmit={form.handleSubmit(fetchRandomQuote)} className="space-y-8">
         <FormField
           control={form.control}
-          name="name"
+          name="URL"
           render={({ field }) => (
             <FormItem>
-              <FormLabel>Name</FormLabel>
+              <FormLabel>API URL</FormLabel>
               <FormControl>
-                <Input placeholder="Your name" {...field} />
+                <Input placeholder="Your name" {...field} readOnly={true} />
               </FormControl>
               <FormDescription>
-                  https://klassic-quote-api.mooo.com에서 API를 호출합니다.
+                  GET Method로 API를 호출합니다.
                   열려 있으니 언제든지 호출해도 됩니다! PR도 환영해요~
               </FormDescription>
               <FormMessage />
             </FormItem>
           )}
         />
-        <Button type="submit">Update account</Button>
+        <Button type="submit">Fetch API</Button>
       </form>
     </Form>
   )
