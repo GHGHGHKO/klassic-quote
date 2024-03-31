@@ -16,6 +16,8 @@ import {
 } from "@/registry/new-york/ui/form"
 import { Input } from "@/registry/new-york/ui/input"
 import { toast } from "@/registry/new-york/ui/use-toast"
+import {Quote} from "@/data/quote";
+import {siteConfig} from "@/config/site";
 
 const accountFormSchema = z.object({
   name: z
@@ -42,7 +44,7 @@ export function AccountForm() {
     defaultValues,
   })
 
-  function onSubmit(data: AccountFormValues) {
+  function onSubmit(data: Quote) {
     toast({
       title: "You submitted the following values:",
       description: (
@@ -53,9 +55,20 @@ export function AccountForm() {
     })
   }
 
+  function fetchRandomQuote(): Promise<Quote> {
+      return fetch(siteConfig.links.randomQuote)
+          .then(response => {
+              return response.json();
+          })
+          .then(quote => {
+              onSubmit(quote);
+              return quote;
+          });
+  }
+
   return (
     <Form {...form}>
-      <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-8">
+      <form onSubmit={form.handleSubmit(fetchRandomQuote)} className="space-y-8">
         <FormField
           control={form.control}
           name="name"
