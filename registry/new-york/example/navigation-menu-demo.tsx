@@ -14,6 +14,7 @@ import {
   NavigationMenuTrigger,
   navigationMenuTriggerStyle,
 } from "@/registry/new-york/ui/navigation-menu"
+import {siteConfig} from "@/config/site";
 
 const components: { title: string; href: string; description: string }[] = [
   {
@@ -69,11 +70,10 @@ export default function NavigationMenuDemo() {
                   >
                     <Icons.logo className="h-6 w-6" />
                     <div className="mb-2 mt-4 text-lg font-medium">
-                      shadcn/ui
+                      {siteConfig.name}
                     </div>
                     <p className="text-sm leading-tight text-muted-foreground">
-                      Beautifully designed components built with Radix UI and
-                      Tailwind CSS.
+                      {siteConfig.description}
                     </p>
                   </a>
                 </NavigationMenuLink>
