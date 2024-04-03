@@ -38,7 +38,8 @@ export function GithubLinks() {
                                          onSelect={() => handleSelect(siteConfig.links.apiGithub)}>
                                 <p>API GitHub</p>
                             </CommandItem>
-                            <CommandItem className="teamaspace-y-1 flex flex-col items-start px-4 py-2">
+                            <CommandItem className="teamaspace-y-1 flex flex-col items-start px-4 py-2"
+                                         onSelect={() => handleSelect(siteConfig.links.webGithub)}>
                                 <p>Web GitHub</p>
                             </CommandItem>
                         </CommandGroup>
