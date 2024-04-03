@@ -41,7 +41,7 @@ export default function ExamplesLayout({ children }: ExamplesLayoutProps) {
               href="/docs"
               className={cn(buttonVariants(), "rounded-[6px]")}
             >
-              Get Started
+              WIP
             </Link>
             <GithubLinks />
           </PageActions>

@@ -25,7 +25,7 @@ export default function IndexPage() {
         </PageHeaderDescription>
         <PageActions>
           <Link href="/docs" className={cn(buttonVariants())}>
-            Get Started
+            WIP
           </Link>
           <GithubLinks />
         </PageActions>
