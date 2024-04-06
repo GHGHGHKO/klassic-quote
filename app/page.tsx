@@ -39,6 +39,11 @@ export default function IndexPage() {
           <FormsPage />
         </div>
       </section>
+      <section className="md:hidden">
+          <div className="overflow-hidden rounded-lg border bg-background shadow-lg">
+              <FormsPage />
+          </div>
+      </section>
     </div>
   )
 }

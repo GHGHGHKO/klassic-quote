@@ -12,7 +12,7 @@ export function Announcement() {
       className="inline-flex items-center rounded-lg bg-muted px-3 py-1 text-sm font-medium"
     >
       🎉 <Separator className="mx-2 h-4" orientation="vertical" />{" "}
-      <span className="sm:hidden">New components and more.</span>
+      <span className="sm:hidden">업데이트 된 새로운 명대사를 확인 할 수 있어요~</span>
       <span className="hidden sm:inline">
         업데이트 된 새로운 명대사를 확인 할 수 있어요~
       </span>
