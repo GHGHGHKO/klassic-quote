@@ -10,7 +10,7 @@ import {
   PageHeaderHeading,
 } from "@/components/page-header"
 import { buttonVariants } from "@/registry/new-york/ui/button"
-import FormsPage from "@/app/examples/forms/page";
+import FormsPage from "@/app/examples/forms/default-form";
 import RandomQuote from "@/components/random-quote";
 import {GithubLinks} from "@/app/examples/forms/components/github-links";
 

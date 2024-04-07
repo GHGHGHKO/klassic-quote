@@ -1,21 +1,8 @@
 import {Separator} from "@/registry/new-york/ui/separator";
 import {SidebarNav} from "@/app/examples/forms/components/sidebar-nav";
 import {AccountForm} from "@/app/examples/forms/account-form";
-
-const sidebarNavItems = [
-    {
-        title: "랜덤 명대사",
-        href: "/examples/forms",
-    },
-    {
-        title: "타짜 명대사",
-        href: "/examples/forms/the-war-of-flower",
-    },
-    {
-        title: "신세계 명대사",
-        href: "/examples/forms/new-world",
-    },
-]
+import {siteConfig} from "@/config/site";
+import {sidebarNavItems} from "@/config/sidebar"
 
 export default function FormsPage() {
 
@@ -35,13 +22,13 @@ export default function FormsPage() {
                     </aside>
                     <div className="space-y-6">
                         <div>
-                            <h3 className="text-lg font-medium">랜덤</h3>
+                            <h3 className="text-lg font-medium">랜덤 명대사</h3>
                             <p className="text-sm text-muted-foreground">
                                 랜덤 명대사를 볼 수 있는 API 입니다.
                             </p>
                         </div>
                         <Separator />
-                        <AccountForm />
+                        <AccountForm randomQuoteLink={siteConfig.links.randomQuote}/>
                     </div>
                 </div>
             </div>
@@ -59,13 +46,13 @@ export default function FormsPage() {
                     </aside>
                     <div className="space-y-6">
                         <div>
-                            <h3 className="text-lg font-medium">랜덤</h3>
+                            <h3 className="text-lg font-medium">랜덤 명대사</h3>
                             <p className="text-sm text-muted-foreground">
                                 랜덤 명대사를 볼 수 있는 API 입니다.
                             </p>
                         </div>
                         <Separator />
-                        <AccountForm />
+                        <AccountForm randomQuoteLink={siteConfig.links.randomQuote}/>
                     </div>
                 </div>
             </div>

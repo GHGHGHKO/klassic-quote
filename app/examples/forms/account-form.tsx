@@ -17,7 +17,6 @@ import {
 import { Input } from "@/registry/new-york/ui/input"
 import { toast } from "@/registry/new-york/ui/use-toast"
 import {Quote} from "@/data/quote";
-import {siteConfig} from "@/config/site";
 
 const accountFormSchema = z.object({
   URL: z.string()
@@ -25,12 +24,11 @@ const accountFormSchema = z.object({
 
 type AccountFormValues = z.infer<typeof accountFormSchema>
 
-// This can come from your database or API.
-const defaultValues: Partial<AccountFormValues> = {
-  URL: siteConfig.links.randomQuote,
-}
+export function AccountForm({ randomQuoteLink }: { randomQuoteLink: string }) {
+    const defaultValues: Partial<AccountFormValues> = {
+        URL: randomQuoteLink,
+    }
 
-export function AccountForm() {
   const form = useForm<AccountFormValues>({
     resolver: zodResolver(accountFormSchema),
     defaultValues,
@@ -48,7 +46,7 @@ export function AccountForm() {
   }
 
   function fetchRandomQuote(): Promise<Quote> {
-      return fetch(siteConfig.links.randomQuote)
+      return fetch(randomQuoteLink)
           .then(response => {
               return response.json();
           })

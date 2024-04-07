@@ -11,6 +11,8 @@ export const siteConfig = {
     apiGithub: "https://github.com/GHGHGHKO/klassic-quote-api",
     webGithub: "https://github.com/GHGHGHKO/klassic-quote",
     randomQuote: "https://klassic-quote-api.mooo.com/v1/random-quote",
+    theWarOfFlowerRandomQuote: "https://klassic-quote-api.mooo.com/v1/quotes/the-war-of-flower/random-quote",
+    newWorldRandomQuote: "https://klassic-quote-api.mooo.com/v1/quotes/new-world/random-quote",
   },
 }
 
