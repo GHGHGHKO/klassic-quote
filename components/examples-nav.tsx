@@ -9,8 +9,18 @@ import { ScrollArea, ScrollBar } from "@/registry/new-york/ui/scroll-area"
 
 const examples = [
   {
-    name: "Forms",
-    href: "/examples/forms",
+    name: "랜덤",
+    href: "/",
+    code: "https://github.com/shadcn/ui/tree/main/apps/www/app/examples/forms",
+  },
+  {
+    name: "타짜",
+    href: "/examples/forms/the-war-of-flower",
+    code: "https://github.com/shadcn/ui/tree/main/apps/www/app/examples/forms",
+  },
+  {
+    name: "신세계",
+    href: "/examples/forms/new-world",
     code: "https://github.com/shadcn/ui/tree/main/apps/www/app/examples/forms",
   },
 ]
@@ -30,7 +40,7 @@ export function ExamplesNav({ className, ...props }: ExamplesNavProps) {
               key={example.href}
               className={cn(
                 "flex h-7 items-center justify-center rounded-full px-4 text-center text-sm transition-colors hover:text-primary",
-                pathname?.startsWith(example.href) ||
+                  pathname === example.href ||
                   (index === 0 && pathname === "/")
                   ? "bg-muted font-medium text-primary"
                   : "text-muted-foreground"
