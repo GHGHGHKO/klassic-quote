@@ -7,7 +7,8 @@ import {Quote} from "@/data/quote";
 const initialQuoteState: Quote = {
     id: 0,
     quote: "",
-    author: ""
+    author: "",
+    name: ""
 };
 
 const GetRandomQuote = () => {
@@ -37,7 +38,7 @@ const GetRandomQuote = () => {
             {loading ? <p>Loading...</p> : (
                 <div>
                     <p><i>{`"${quote.quote}"`}</i></p>
-                    <p style={{ textAlign: 'right' }}>{"- 타짜, " + (quote.author)}</p>
+                    <p style={{ textAlign: 'right' }}>{"- " + (quote.name) + ", " + (quote.author)}</p>
                 </div>
             )}
         </div>

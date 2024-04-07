@@ -4,8 +4,16 @@ import {AccountForm} from "@/app/examples/forms/account-form";
 
 const sidebarNavItems = [
     {
-        title: "타짜 명대사",
+        title: "랜덤 명대사",
         href: "/examples/forms",
+    },
+    {
+        title: "타짜 명대사",
+        href: "/examples/forms/the-war-of-flower",
+    },
+    {
+        title: "신세계 명대사",
+        href: "/examples/forms/new-world",
     },
 ]
 
@@ -27,9 +35,9 @@ export default function FormsPage() {
                     </aside>
                     <div className="space-y-6">
                         <div>
-                            <h3 className="text-lg font-medium">타짜</h3>
+                            <h3 className="text-lg font-medium">랜덤</h3>
                             <p className="text-sm text-muted-foreground">
-                                타짜 명대사를 볼 수 있는 API 입니다.
+                                랜덤 명대사를 볼 수 있는 API 입니다.
                             </p>
                         </div>
                         <Separator />
@@ -51,9 +59,9 @@ export default function FormsPage() {
                     </aside>
                     <div className="space-y-6">
                         <div>
-                            <h3 className="text-lg font-medium">타짜</h3>
+                            <h3 className="text-lg font-medium">랜덤</h3>
                             <p className="text-sm text-muted-foreground">
-                                타짜 명대사를 볼 수 있는 API 입니다.
+                                랜덤 명대사를 볼 수 있는 API 입니다.
                             </p>
                         </div>
                         <Separator />
