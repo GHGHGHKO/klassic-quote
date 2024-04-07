@@ -40,20 +40,15 @@ export default function FormsPage() {
                     </p>
                 </div>
                 <Separator className="my-6" />
-                <div className="flex flex-col space-y-8 lg:flex-row lg:space-x-12 lg:space-y-0">
-                    <aside className="-mx-4 lg:w-1/5">
-                        <SidebarNav items={sidebarNavItems} />
-                    </aside>
-                    <div className="space-y-6">
-                        <div>
-                            <h3 className="text-lg font-medium">랜덤 명대사</h3>
-                            <p className="text-sm text-muted-foreground">
-                                랜덤 명대사를 볼 수 있는 API 입니다.
-                            </p>
-                        </div>
-                        <Separator />
-                        <AccountForm randomQuoteLink={siteConfig.links.randomQuote}/>
+                <div className="space-y-6">
+                    <div>
+                        <h3 className="text-lg font-medium">랜덤 명대사</h3>
+                        <p className="text-sm text-muted-foreground">
+                            랜덤 명대사를 볼 수 있는 API 입니다.
+                        </p>
                     </div>
+                    <Separator />
+                    <AccountForm randomQuoteLink={siteConfig.links.randomQuote}/>
                 </div>
             </div>
         </>

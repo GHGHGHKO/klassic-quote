@@ -31,13 +31,7 @@ export default function SettingsLayout({ children }: SettingsLayoutProps) {
               버튼을 눌러 API를 호출하면 Response body를 확인 할 수 있습니다.
             </p>
           </div>
-          <Separator className="my-6" />
-          <div className="flex flex-col space-y-8 lg:flex-row lg:space-x-12 lg:space-y-0">
-            <aside className="-mx-4 lg:w-1/5">
-              <SidebarNav items={sidebarNavItems} />
-            </aside>
-            <div className="flex-1 lg:max-w-2xl">{children}</div>
-          </div>
+          <div className="flex-1 lg:max-w-2xl">{children}</div>
         </div>
       </>
   )
