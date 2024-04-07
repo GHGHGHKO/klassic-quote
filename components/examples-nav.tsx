@@ -23,6 +23,11 @@ const examples = [
     href: "/examples/forms/new-world",
     code: "https://github.com/shadcn/ui/tree/main/apps/www/app/examples/forms",
   },
+  {
+    name: "범죄와의 전쟁",
+    href: "/examples/forms/nameless-gangster",
+    code: "https://github.com/shadcn/ui/tree/main/apps/www/app/examples/forms",
+  },
 ]
 
 interface ExamplesNavProps extends React.HTMLAttributes<HTMLDivElement> {}
