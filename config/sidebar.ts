@@ -11,4 +11,8 @@ export const sidebarNavItems = [
         title: "신세계 명대사",
         href: "/examples/forms/new-world",
     },
+    {
+        title: "범죄와의 전쟁 명대사",
+        href: "/examples/forms/nameless-gangster",
+    },
 ]
