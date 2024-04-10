@@ -19,11 +19,6 @@ const nextConfig = {
   redirects() {
     return [
       {
-        source: "/examples",
-        destination: "/examples/forms",
-        permanent: false,
-      },
-      {
         source: "/docs/primitives/:path*",
         destination: "/docs/components/:path*",
         permanent: true,

@@ -30,17 +30,6 @@ export function MainNav() {
           Docs
         </Link>
         <Link
-          href="/examples"
-          className={cn(
-            "transition-colors hover:text-foreground/80",
-            pathname?.startsWith("/examples")
-              ? "text-foreground"
-              : "text-foreground/60"
-          )}
-        >
-          Examples
-        </Link>
-        <Link
           href={siteConfig.links.apiGithub}
           target="_blank"
           className={cn(
