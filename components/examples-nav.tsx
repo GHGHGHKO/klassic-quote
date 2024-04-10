@@ -28,6 +28,11 @@ const examples = [
     href: "/examples/forms/nameless-gangster",
     code: "https://github.com/shadcn/ui/tree/main/apps/www/app/examples/forms",
   },
+  {
+    name: "바람",
+    href: "/examples/forms/wish",
+    code: "https://github.com/shadcn/ui/tree/main/apps/www/app/examples/forms",
+  },
 ]
 
 interface ExamplesNavProps extends React.HTMLAttributes<HTMLDivElement> {}
