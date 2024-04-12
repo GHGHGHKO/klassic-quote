@@ -38,6 +38,15 @@ export function MainNav() {
         >
           GitHub
         </Link>
+        <Link
+            href={siteConfig.links.statusPage}
+            target="_blank"
+            className={cn(
+                "hidden text-foreground/60 transition-colors hover:text-foreground/80 lg:block"
+            )}
+        >
+          Status
+        </Link>
       </nav>
     </div>
   )
