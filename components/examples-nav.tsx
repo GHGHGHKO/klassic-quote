@@ -27,10 +27,6 @@ const examples = [
     name: "바람",
     href: "/examples/forms/wish",
   },
-  {
-    name: "아저씨",
-    href: "/examples/forms/the-man-from-nowhere",
-  },
 ]
 
 interface ExamplesNavProps extends React.HTMLAttributes<HTMLDivElement> {}

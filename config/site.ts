@@ -16,7 +16,6 @@ export const siteConfig = {
     newWorldRandomQuote: "https://klassic-quote-api.mooo.com/v1/quotes/new-world/random-quote",
     namelessGangsterRandomQuote: "https://klassic-quote-api.mooo.com/v1/quotes/nameless-gangster/random-quote",
     wishRandomQuote: "https://klassic-quote-api.mooo.com/v1/quotes/wish/random-quote",
-    theManFromNowhereRandomQuote: "https://klassic-quote-api.mooo.com/v1/quotes/the-man-from-nowhere/random-quote    ",
   },
 }
 

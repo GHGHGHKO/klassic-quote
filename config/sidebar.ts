@@ -19,9 +19,4 @@ export const sidebarNavItems = [
         title: "바람 명대사",
         href: "/examples/forms/wish",
     },
-
-    {
-        title: "아저씨 명대사",
-        href: "/examples/forms/the-man-from-nowhere",
-    },
 ]
