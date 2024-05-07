@@ -12,10 +12,6 @@ export const sidebarNavItems = [
         href: "/examples/forms/new-world",
     },
     {
-        title: "범죄와의 전쟁 명대사",
-        href: "/examples/forms/nameless-gangster",
-    },
-    {
         title: "바람 명대사",
         href: "/examples/forms/wish",
     },
