@@ -20,10 +20,6 @@ const examples = [
     href: "/examples/forms/new-world",
   },
   {
-    name: "범죄와의 전쟁",
-    href: "/examples/forms/nameless-gangster",
-  },
-  {
     name: "바람",
     href: "/examples/forms/wish",
   },
