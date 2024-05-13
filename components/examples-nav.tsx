@@ -20,16 +20,12 @@ const examples = [
     href: "/examples/forms/new-world",
   },
   {
-    name: "범죄와의 전쟁",
-    href: "/examples/forms/nameless-gangster",
-  },
-  {
     name: "바람",
     href: "/examples/forms/wish",
   },
   {
-    name: "아저씨",
-    href: "/examples/forms/the-man-from-nowhere",
+    name: "다른 영화",
+    href: "/examples/forms/others",
   },
 ]
 
