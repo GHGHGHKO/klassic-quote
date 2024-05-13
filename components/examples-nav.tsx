@@ -23,6 +23,10 @@ const examples = [
     name: "바람",
     href: "/examples/forms/wish",
   },
+  {
+    name: "다른 영화",
+    href: "/examples/forms/others",
+  },
 ]
 
 interface ExamplesNavProps extends React.HTMLAttributes<HTMLDivElement> {}

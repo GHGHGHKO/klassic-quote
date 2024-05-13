@@ -15,4 +15,8 @@ export const sidebarNavItems = [
         title: "바람 명대사",
         href: "/examples/forms/wish",
     },
+    {
+        title: "다른 명대사",
+        href: "/examples/forms/others",
+    },
 ]

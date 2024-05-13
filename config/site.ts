@@ -15,7 +15,7 @@ export const siteConfig = {
     theWarOfFlowerRandomQuote: "https://klassic-quote-api.mooo.com/v1/quotes/the-war-of-flower/random-quote",
     newWorldRandomQuote: "https://klassic-quote-api.mooo.com/v1/quotes/new-world/random-quote",
     wishRandomQuote: "https://klassic-quote-api.mooo.com/v1/quotes/wish/random-quote",
+    theManFromNowhereRandomQuote: "https://klassic-quote-api.mooo.com/v1/quotes/the-man-from-nowhere/random-quote",
+    namelessGangsterRandomQuote: "https://klassic-quote-api.mooo.com/v1/quotes/nameless-gangster/random-quote",
   },
 }
-
-export type SiteConfig = typeof siteConfig
